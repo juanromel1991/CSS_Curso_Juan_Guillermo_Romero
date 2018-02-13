@@ -1,0 +1,108 @@
+body{
+  background: #02010a;
+  font-family: Dancing Script;
+}
+header  {
+background: #5b7989;
+color: white;
+border-radius: 10px;
+text-shadow: 2px 2px #02010a;
+display: flex;
+display: -webkit-flex;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+}
+header{
+animation: miSlideIn, 1s;
+}
+@-webkit-keyframes miSlideIn{
+0%{
+margin-top:150%;
+}
+60%{
+margin-top:-5%;
+}
+100%{
+margin-top:0%;
+}
+}
+#contenido{
+  width: 900px;
+  margin: 0 auto;
+  min-height: 200px;
+}
+#tituloCabecera{
+  width: 70%;
+  text-indent: 15px;
+}
+#menuCabecera{
+  width: 30%;
+  font-size: 18pt;
+}
+#galeria{
+  background:#d5c75f;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+@media screen and (max-width: 900px){
+#menuCabecera{
+  display: flex;
+  flex-direction: row;
+}
+
+}
+
+.blur{
+  -webkit-filter:blur(10px);
+  filter:blur(10px);
+  padding-left:5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+}
+.grey{
+  -webkit-filter:grayscale(100%);
+  filter: grayscale(100);
+  padding-left:5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+}
+.sepia{
+  -webkit-filter:sepia(90%);
+  filter: sepia(90%);
+  padding-left:5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+}
+@media screen and (max-width: 900px){
+  #galeria{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+footer{
+  border-bottom: 10px;
+  background:#C6d5c5;
+}
+#Datos{
+  display: flex;
+  flex-direction: row;
+}
+.Contacto{
+  padding-left: 10%;
+  padding-right: 10%
+}
+.terminos{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.Redes{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.Derechos{
+  padding-left: 10%;
+  padding-right: 10%;
+}
